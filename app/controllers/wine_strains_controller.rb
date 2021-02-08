@@ -3,7 +3,7 @@ class WineStrainsController < ApplicationController
 
   # GET /wine_strains or /wine_strains.json
   def index
-    @wine_strains = WineStrain.all
+    @wine_strains = WineStrain.all#.asc(a..z)
   end
 
   # GET /wine_strains/1 or /wine_strains/1.json
