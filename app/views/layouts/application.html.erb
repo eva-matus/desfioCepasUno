@@ -9,17 +9,11 @@
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     </head>
+    
 
   <body>
 
-  <% if user_signed_in? %>
-     <%= link_to "Log out", destroy_session_path(:user), method: :delete %>
-     <%= link_to  "Wines", wines_path %>
-     <%= link_to  "Strains", strains_path %>
-     <%= link_to  "Wine_strains", wine_strains_path %>
-<% else %>
-  <%= link_to  "Sign in",  new_user_session_path  %>
-<% end %>
+<%= render 'shared/navbar' %>
 
   <%= yield %>
    </body>
