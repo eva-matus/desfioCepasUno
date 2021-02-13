@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-aquamarine">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Viña Don Isidro</a>
+    <a class="navbar-brand" href="#">Viña Doña Isidora</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,12 +8,14 @@
       <div class="navbar-nav">
       <td><% if user_signed_in? %>
       <ul>
-       <button type="button" class="btn btn-outline-light"><%= link_to "Log out", destroy_session_path(:user), method: :delete %></button>
-       <button type="button" class="btn btn-outline-light"><%= link_to  "Wines", wines_path %></button>
-       <button type="button" class="btn btn-outline-light"><%= link_to  "Strains", strains_path %></button>
-       <button type="button" class="btn btn-outline-light"><%= link_to  "Wine_strains", wine_strains_path %></button>
+       <button class="btn btn-outline-danger text-dark"><%= link_to "Log out", destroy_session_path(:user), method: :delete %></button>
+       <button class="btn btn-outline-danger"><%= link_to  "Wines", wines_path %></button>
+       <button class="btn btn-outline-danger"><%= link_to  "Strains", strains_path %></button>
+       <button class="btn btn-outline-danger"><%= link_to  "Wine_strains", wine_strains_path %></button>
+       <button class="btn btn-outline-danger"><%= link_to  "Reviews", reviews_path %></button>
+       <button class="btn btn-outline-danger"><%= link_to  "Oenologist", oenologists_path %></button>
        <% else %>
-       <button type="button" class="btn btn-outline-light"><%= link_to  "Sign in",  new_user_session_path  %></button>
+       <button class="btn btn-outline-danger"><%= link_to  "Enter Page",  new_user_session_path  %></button>
       <% end %>
       </ul>
     </div>

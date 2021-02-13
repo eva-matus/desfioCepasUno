@@ -1,0 +1,53 @@
+<%= form_with(model: oenologist, local: true) do |form| %>
+  <% if oenologist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(oenologist.errors.count, "error") %> prohibited this oenologist from being saved:</h2>
+
+      <ul>
+      <% oenologist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.text_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionality %>
+    <%= form.text_field :nacionality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.text_field :company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :editor %>
+    <%= form.text_field :editor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :writer %>
+    <%= form.text_field :writer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reviewer %>
+    <%= form.text_field :reviewer %>
+  </div>
+
+  
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

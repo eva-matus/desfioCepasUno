@@ -14,3 +14,14 @@
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import "font-awesome";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image{
+    background-image: url(../assets/viñas.jpg);
+}

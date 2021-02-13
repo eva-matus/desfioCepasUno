@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @oenologist.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @oenologist.age %>
+</p>
+
+<p>
+  <strong>Nacionality:</strong>
+  <%= @oenologist.nacionality %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @oenologist.company %>
+</p>
+
+<p>
+  <strong>Editor:</strong>
+  <%= @oenologist.editor %>
+</p>
+
+<p>
+  <strong>Writer:</strong>
+  <%= @oenologist.writer %>
+</p>
+
+<p>
+  <strong>Reviewer:</strong>
+  <%= @oenologist.reviewer %>
+</p>
+
+<%= link_to 'Edit', edit_oenologist_path(@oenologist) %> |
+<%= link_to 'Back', oenologists_path %>

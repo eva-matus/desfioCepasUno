@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Ruby version 2.5.3
+* Rails version 5.2.4
 
-* Ruby version
+* System dependencies:
+Gemfile:
+Para la autenticación de usuarios,utilice devise, y que provee todas las herramientas necesarias para el ingreso y registro de futuros usuarios.
 
-* System dependencies
+- gem 'devise'
 
-* Configuration
+Para el aspecto y adaptación de interfás gráfica:
 
-* Database creation
+- gem 'bootstrap', '~> 5.0.0.beta1'
+- gem 'jquery-rails', '~> 4.0', '>= 4.0.3'
+- gem "font-awesome-rails"
 
-* Database initialization
+* Configuration:
 
-* How to run the test suite
+-Configuración de las gem correspondientes al proyecto, a su vez la implementación de las mismas.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Database creation:
 
-* Deployment instructions
+-La utilización de Posgresql para la prueba en práctica de la app, y que estos datos ingresados puedan persistir mientras la pruebas.
+
+* Link del repositorio:
+
+git@github.com:eva-matus/desfioCepasUno.git
+
+Para mayor facilidad de lectura adjunto png de código de acceso rápido a la app:
+
 
 * ...
