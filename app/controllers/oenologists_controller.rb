@@ -3,7 +3,7 @@ class OenologistsController < ApplicationController
 
   # GET /oenologists or /oenologists.json
   def index
-    @oenologists = Oenologist.all
+    @oenologists = Oenologist.all.order('age DESC')
   end
 
   # GET /oenologists/1 or /oenologists/1.json
